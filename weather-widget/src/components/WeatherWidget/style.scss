@@ -10,15 +10,18 @@
   justify-content: space-between;
   align-items: center;
   min-width: 200px;
-  &__input {
+  &__form {
     position: absolute;
-    bottom: -30px;
+    bottom: -32px;
+  }
+  &__input {
     padding: 0.5rem;
     border: none;
     width: 180px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
+
   &__city {
     font-size: 2rem;
   }
