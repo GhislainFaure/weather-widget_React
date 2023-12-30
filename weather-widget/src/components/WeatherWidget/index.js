@@ -7,8 +7,8 @@ export default function WeatherWidget() {
   const [temperature, setTemperature] = useState("10");
   const [inputValue, setInputValue] = useState("");
 
-  const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
-  const apikey = "3f31e39676524d90deea984395031598";
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+  const apikey = process.env.REACT_APP_API_KEY;
   useEffect(() => {
     fetch(`${baseUrl}?q=${city}&units=metric&appid=${apikey}&lang=fr`)
       .then((response) => response.json())
